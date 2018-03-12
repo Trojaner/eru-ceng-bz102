@@ -1,0 +1,32 @@
+﻿namespace BZ102_4_2
+{
+    enum CardValue
+    {
+        [CardScore(2)]
+        C2,
+        [CardScore(3)]
+        C3,
+        [CardScore(4)]
+        C4,
+        [CardScore(5)]
+        C5,
+        [CardScore(6)]
+        C6,
+        [CardScore(7)]
+        C7,
+        [CardScore(8)]
+        C8,
+        [CardScore(9)]
+        C9,
+        [CardScore(10)]
+        C10,
+        [CardScore(11)]
+        Joker,
+        [CardScore(12)]
+        Queen,
+        [CardScore(13)]
+        King,
+        [CardScore(14)]
+        Ace
+    }
+}
