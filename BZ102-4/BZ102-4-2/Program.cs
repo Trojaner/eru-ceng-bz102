@@ -9,11 +9,19 @@ namespace BZ102_4_2
             Cards cards = new Cards(52);
             FillDeck(cards);
             cards.Shuffle();
-            var card = cards.DrawCard();
+            while(DrawAndDisplayCard(cards) != null)
+                ;
 
+            Console.WriteLine("No cards left");
+            Console.ReadKey();
+        }
+
+        static Card  DrawAndDisplayCard(Cards cards)
+        {
+            var card = cards.DrawCard();
             Console.WriteLine($"Card retrieved: {card.Type} - {card.Value} (Score: {card.Value.GetScore()})");
             Console.ReadKey(true);
-            Main();
+            return card;
         }
 
         static void FillDeck(Cards cards)

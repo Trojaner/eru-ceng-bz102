@@ -40,11 +40,8 @@ namespace BZ102_4_2
             var card = _deck[_drawIndex];
             _drawIndex--;
 
-            if(_drawIndex < 0)
-                throw new Exception("No cards left!");
-
-            if(card == null)
-                throw new Exception();
+            if (_drawIndex < 0)
+                return null;
 
             return card;
         }
