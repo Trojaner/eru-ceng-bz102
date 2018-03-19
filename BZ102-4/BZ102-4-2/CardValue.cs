@@ -2,31 +2,31 @@
 {
     enum CardValue
     {
-        [CardScore(2)]
+        [CardValueOption(2, "2")]
         C2,
-        [CardScore(3)]
+        [CardValueOption(3, "3")]
         C3,
-        [CardScore(4)]
+        [CardValueOption(4, "4")]
         C4,
-        [CardScore(5)]
+        [CardValueOption(5, "5")]
         C5,
-        [CardScore(6)]
+        [CardValueOption(6, "6")]
         C6,
-        [CardScore(7)]
+        [CardValueOption(7, "7")]
         C7,
-        [CardScore(8)]
+        [CardValueOption(8, "8")]
         C8,
-        [CardScore(9)]
+        [CardValueOption(9, "9")]
         C9,
-        [CardScore(10)]
+        [CardValueOption(10, "10")]
         C10,
-        [CardScore(11)]
+        [CardValueOption(10, "Joker")]
         Joker,
-        [CardScore(12)]
+        [CardValueOption(10, "Queen")]
         Queen,
-        [CardScore(13)]
+        [CardValueOption(10, "King")]
         King,
-        [CardScore(14)]
+        [CardValueOption(11, "Ace")]
         Ace
     }
 }
